@@ -45,11 +45,12 @@ exports.arraysAnswers = {
   },
 
   concat: function(arr1, arr2) {
-
+    return [...arr1, ...arr2];
   },
 
   insert: function(arr, item, index) {
-
+    arr.splice(index, 0, item);
+    return arr;
   },
 
   count: function(arr, item) {
