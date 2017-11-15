@@ -1,7 +1,7 @@
 exports = typeof window === 'undefined' ? global : window;
 
 exports.stringsAnswers = {
-  reduceString: function(str, amount) {
+  reduceString: (str, amount) => {
     const strArr = [...str];
     const arr = [];
 
@@ -17,11 +17,12 @@ exports.stringsAnswers = {
     return arr.join('');
   },
 
-  wordWrap: function(str, cols) {
+  wordWrap: (str, cols) => {
+    return str.replace(/\n/g, '/')
 
   },
 
   reverseString: function(str) {
-
+    return str.split('').reverse().join('');
   }
 };

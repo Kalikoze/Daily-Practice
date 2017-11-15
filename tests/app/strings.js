@@ -31,7 +31,7 @@ describe('strings', function() {
     });
   });
 
-  it('you should be able to reverse a string', function() {
+  it.only('you should be able to reverse a string', () => {
     var inputStrings = [
       'abc',
       'i am a string of characters',
@@ -43,7 +43,7 @@ describe('strings', function() {
       'amanaP :lanac a ,nalp a ,nam A'
     ];
 
-    inputStrings.forEach(function(str, index) {
+    inputStrings.forEach((str, index) => {
       var result = stringsAnswers.reverseString(str);
       expect(result).to.eql(outputStrings[index]);
     });

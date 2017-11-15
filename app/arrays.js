@@ -5,7 +5,7 @@ exports.arraysAnswers = {
     return arr.indexOf(item)
   },
 
-  sum: function(arr) {
+  sum: (arr) => {
     return arr.reduce((accu, num) => {
       accu += num
       return accu
