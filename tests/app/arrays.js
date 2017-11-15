@@ -78,7 +78,7 @@ describe('arrays', function() {
     expect(result.join(' ')).to.eql('1 2 3 4 a b c 1');
   });
 
-  it.only('you should be able to add an item anywhere in an array', function() {
+  it('you should be able to add an item anywhere in an array', function() {
     var result = arraysAnswers.insert(a, 'z', 2);
 
     expect(result).to.have.length(5);
@@ -97,7 +97,7 @@ describe('arrays', function() {
     expect(result.sort()).to.eql([1, 3, 4]);
   });
 
-  it('you should be able to square each number in an array', function() {
+  it.only('you should be able to square each number in an array', function() {
     var result = arraysAnswers.square(a);
 
     expect(result).to.have.length(4);

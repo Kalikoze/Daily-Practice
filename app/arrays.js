@@ -54,15 +54,17 @@ exports.arraysAnswers = {
   },
 
   count: function(arr, item) {
-
+    const newArr = arr.filter(num => num === item);
+    return newArr.length;
   },
 
   duplicates: function(arr) {
 
+
   },
 
   square: function(arr) {
-
+    return arr.map(num => Math.pow(num, 2));
   },
 
   findAllOccurrences: function(arr, target) {
