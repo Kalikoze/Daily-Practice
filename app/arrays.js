@@ -68,6 +68,12 @@ exports.arraysAnswers = {
   },
 
   findAllOccurrences: function(arr, target) {
-
+    const indexArray = [];
+    for(let i = 0; i < arr.length; i++) {
+      if(arr[i] === target) {
+        indexArray.push(i);
+      };
+    };
+    return indexArray;
   }
 };
