@@ -49,7 +49,7 @@ describe('arrays', function() {
     expect(result[result.length - 1]).to.eql(10);
   });
 
-  it.only('you should be able to remove the last item of an array', function() {
+  it('you should be able to remove the last item of an array', function() {
     var result = arraysAnswers.truncate(a);
 
     expect(result).to.have.length(3);
@@ -63,7 +63,7 @@ describe('arrays', function() {
     expect(result[0]).to.eql(10);
   });
 
-  it('you should be able to remove the first item of an array', function () {
+  it.only('you should be able to remove the first item of an array', function () {
     var result = arraysAnswers.curtail(a);
 
     expect(result).to.have.length(3);
