@@ -31,7 +31,7 @@ describe('strings', function() {
     });
   });
 
-  it.only('you should be able to reverse a string', () => {
+  it('you should be able to reverse a string', function() {
     var inputStrings = [
       'abc',
       'i am a string of characters',
