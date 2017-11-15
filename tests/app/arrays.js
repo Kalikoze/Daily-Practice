@@ -42,7 +42,7 @@ describe('arrays', function() {
     expect(result).equal(a);
   });
 
-  it('you should be able to add an item to the end of an array', function() {
+  it.only('you should be able to add an item to the end of an array', function() {
     var result = arraysAnswers.append(a, 10);
 
     expect(result).to.have.length(5);
