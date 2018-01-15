@@ -59,8 +59,17 @@ exports.arraysAnswers = {
   },
 
   duplicates: function(arr) {
+    let duplicates = [];
+    let numbers = [];
 
+    arr.forEach(num => {
+      if (numbers.includes(num) && !duplicates.includes(num)) {
+        return duplicates.push(num);
+      }
+      numbers.push(num);
+    })
 
+    return duplicates;
   },
 
   square: function(arr) {
